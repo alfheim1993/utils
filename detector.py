@@ -166,6 +166,7 @@ class Detector:
 					fp.write(','.join([res_dic['name'], res_dic['category'], str(res_dic['score'])])+'\n')
 if __name__ == '__main__':
 	config_file = 'config-fasterrcnn.py'
+	
 	checkpoint_file = 'models-20200226/epoch_30.pth'
 	with open('codes.json', 'r') as f:
 		class_names = list(json.load(f).values())
